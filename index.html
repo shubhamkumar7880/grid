@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid template</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+        grid-auto-columns: minmax(30px, auto);
+
+        grid-auto-rows: minmax(30px, auto);
+      }
+      .item {
+        color: white;
+        background-color: lightgreen;
+        text-align: center;
+      }
+      #item7 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+      }
+      #item1 {
+        grid-row-start: 1;
+        grid-row-end: 13;
+      }
+      #item2 {
+        grid-row-start: 1;
+        grid-row-end: 7;
+      }
+      #item3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 13;
+      }
+      #item4 {
+        grid-row-start: 1;
+        grid-row-end: 5;
+      }
+      #item5 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 9;
+      }
+      #item6 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end: 13;
+      }
+      #item8 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 7;
+      }
+      #item9 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 7;
+        grid-row-end: 10;
+      }
+      #item10 {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 10;
+        grid-row-end: 13;
+      }
+      #item11 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 5;
+        grid-column-end: 6;
+      }
+      #item12 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+      #item13 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 7;
+      }
+      #item14 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 9;
+      }
+      #item15 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 9;
+        grid-row-end: 11;
+      }
+      #item16 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 11;
+        grid-row-end: 13;
+      }
+      #item26 {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 10;
+        grid-row-end: 11;
+      }
+      #item27 {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 11;
+        grid-row-end: 12;
+      }
+      #item28 {
+        grid-column-start: 6;
+        grid-column-end: 7;
+        grid-row-start: 12;
+        grid-row-end: 13;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="item1">box 1</div>
+      <div class="item" id="item2">box 2</div>
+      <div class="item" id="item3">box 3</div>
+      <div class="item" id="item4">box 4</div>
+      <div class="item" id="item5">box 5</div>
+      <div class="item" id="item6">box 6</div>
+      <div class="item" id="item7">box 7</div>
+      <div class="item" id="item8">box 8</div>
+      <div class="item" id="item9">box 9</div>
+      <div class="item" id="item10">box 10</div>
+      <div class="item" id="item11">box 11</div>
+      <div class="item" id="item12">box 12</div>
+      <div class="item" id="item13">box 13</div>
+      <div class="item" id="item14">box 14</div>
+      <div class="item" id="item15">box 15</div>
+      <div class="item" id="item16">box 16</div>
+      <div class="item">box 17</div>
+      <div class="item">box 18</div>
+      <div class="item">box 19</div>
+      <div class="item">box 20</div>
+      <div class="item" id="item21">box 21</div>
+      <div class="item">box 22</div>
+      <div class="item">box 23</div>
+      <div class="item">box 24</div>
+      <div class="item" id="item25">box 25</div>
+      <div class="item" id="item26">box 26</div>
+      <div class="item" id="item27">box 27</div>
+      <div class="item" id="item28">box 28</div>
+    </div>
+  </body>
+</html>
